@@ -1,13 +1,13 @@
-\documentclass[11pt, margin]{res}
+\documentclass[11pt, margin, line]{res}
 
 
 %Adjust margins
-\topmargin=-.3in
-\addtolength{\textwidth}{.6in}
-\addtolength{\resumewidth}{.6in}
-\addtolength{\textheight}{.6in}
-\addtolength{\oddsidemargin}{-.3in}
-\addtolength{\evensidemargin}{-.3in}
+\topmargin=-.5in
+\addtolength{\textwidth}{1in}
+\addtolength{\resumewidth}{1in}
+\addtolength{\textheight}{1in}
+\addtolength{\oddsidemargin}{-.5in}
+\addtolength{\evensidemargin}{-.5in}
 
 
 \usepackage{fontspec}
@@ -15,6 +15,7 @@
 
 \usepackage{enumitem}
 \renewcommand{\labelitemii}{\char"25E6}
+\setlist[itemize]{itemsep=-3pt}
 
 \usepackage{hyperref}
 
@@ -22,69 +23,85 @@
 \name{\huge\bf Alexander Kursell}
 \email{awkursel@uwaterloo.ca}
 \phone{(416) 707-0391}
+\site{\url{https://github.com/alexkursell}}
+\address{ }
 
 
 \begin{document}
 \begin{resume}
  
+\vspace{-1.5\topsep}
+\section{SUMMARY OF \\ QUALIFICATIONS}   
+    \begin{itemize}
+        \item Six years of experience using \textbf{Python}.
+        \item One to two years experience in \textbf{C, Javascript, Java, and LaTeX}.
+        \item Three months of experience using \textbf{Rust}.
+        \item Three years experience in high-traffic retail position. Non-technical, but with a heavy emphasis on soft skills and working without close supervision.
+    \end{itemize}
 
-\section{SUMMARY OF \\ QUALIFICATIONS}   \begin{itemize}[leftmargin=*, itemsep=-2pt]
-                        \item Six years of experience using Python.
-                        \item One to two years experience in C, JavaScript, Java, and LaTeX.
-                        \item Three years experience in high-traffic retail position. Non-technical, but with a heavy emphasis on soft skills and working without close supervision.
-                    \end{itemize}
-
-\section{PROJECTS \\ / EXPERIENCES}
-            See \url{https://github.com/alexkursell} for the code of each project listed below.
-
-            \begin{itemize}[leftmargin=*, itemsep=-2pt]
-                \item Wrote complete serverless chat client with GUI in Python for Grade 12 CS final project.
-                \item Built combination lamp/alarm clock using basic electronic parts and an Arduino programmed in C as a gift.
-                \item Wrote Firefox browser extension to scrape and collate arbitrary sections of multiple web pages in JavaScript as a personal project.
-                \item Competed in multiple programming contests, both as an individual and in groups:
-                \begin{itemize}[itemsep=-2pt]
-                    \item Recieved Distinction (top 25\%) in the 2017 Canadian Computing Competition (CCC).
-                    \item Recieved Distinction (top 25\%) in the 2017 Euclid math competition.
-                    \item Team reached and placed in the top 10 in the final round of the 2017 Educational Computing Organization of Ontario contest (ECOO).
-                \end{itemize}
-                \item Wrote this resume in LaTeX.
-            \end{itemize}
-
-
-\section{WORK \\ EXPERIENCE} \dateditem{Retail Sales Associate}{February 2015 - August 2017}
-                Cedar Fair Entertainment Company, \\
-                Canada's Wonderland Merchandise Department, Vaughan, ON 
-                
-                \begin{itemize}[itemsep=-2pt]
-                    \item Sucessfully operated retail location alone with infrequent contact with supervisor.
-                    \item Served many customers at once, often within high-traffic periods.
-                    \item Worked long (8.5-12 hr) shifts through weekends while school was still running, full time in summer.
-                    \item Recieved multiple positive performance reviews. Supervisor references available upon request.
-                \end{itemize}
- 
-\section{EXTRA-CURRICULARS}             
-            \dateditem{President}{September 2016 - June 2017}
-            Thornhill Secondary School Computer Club
-            \begin{itemize}[itemsep=-2pt]
-                \item Taught large (20+ people) introductory programming classes in Python for new members.
-                \item Planned and managed club trips with attendances from 8 - 12 people.
-                \item Handled club funding requests, writing field trip consent forms, other required paperwork.
-            \end{itemize}
+\section{PROJECTS /\\ COMPETITIONS}
+    \dateditem{ScrapeSave - Firefox Page Scraping Extension}{March 2017 - June 2017}
+        \vspace{-\topsep}
+        \begin{itemize}
+            \item Implemented in \textbf{Javascript} and \textbf{jQuery}, along with \textbf{HTML} and \textbf{CSS} for the interface.
+            \item Scrapes and collates arbitrary sections of multiple similar pages into a single HTML file.
+            \item Use cases: Retrieving all articles of a blog, all pages of a webcomic, series of Reddit posts.
+        \end{itemize}
+    
+    \dateditem{AlexChat - Serverless Graphical Chat Client}{November 2016 - January 2017}
+        \vspace{-\topsep}
+        \begin{itemize}
+            \item Implemented in \textbf{Python} using only components of the standard library.
+            \item Uses TCP and UDP sockets to discover and communicate with peers on the same network.
+            \item Requires no configuration, setup, installation, or peer bootstrapping.
+        \end{itemize}
+    
+    \dateditem{Programming Competitions}{}
+        \vspace{-\topsep}
+        \begin{itemize}
+            \item Recieved Distinction (top 25\%) in the 2017 Canadian Computing Competition (CCC).
+            \item Recieved Distinction (top 25\%) in the 2017 Euclid math competition.
+            \item Team reached and placed in the top 10 in the final, province-wide round of the 2017 Educational Computing Organization of Ontario contest (ECOO).
+        \end{itemize}
 
 
 
-\section{EDUCATION} \dateditem{Candidate for Bachelor of Software Engineering}{September 2017 - present}
-                    Honours Software Engineering, \\
-                    University of Waterloo, Waterloo, ON
+\section{WORK /\\ LEADERSHIP} 
+    \dateditem{President}{September 2016 - June 2017}
+        Thornhill Secondary School Computer Club
+        \begin{itemize}
+            \item Taught large (20+ people) introductory programming classes in Python for new members.
+            \item Planned and managed club trips with attendances from 8 - 12 people.
+            \item Handled club funding requests, writing field trip consent forms, other required paperwork.
+        \end{itemize}
 
-                    \dateditem{High School Diploma}{June 2017}
-                    Thornhill Secondary School, Thornhill, ON
-                    \begin{itemize}[itemsep=-2pt]
-                        \item Grade 12 average mark of 96.5\%.
-                        \item Highest mark in class in 3 of 7 grade 12 classes.
-                    \end{itemize}
+    \dateditem{Retail Sales Associate}{February 2015 - August 2017}
+        Cedar Fair Entertainment Company, \\
+        Canada's Wonderland Merchandise Department, Vaughan, ON 
+        \begin{itemize}
+            \item Sucessfully operated retail location alone with infrequent contact with supervisor.
+            \item Served many customers at once, often within high-traffic periods.
+            \item Worked long (8-12 hr) shifts through weekends while school was still running, full time in summer.
+            \item Recieved multiple positive performance reviews. Supervisor references available upon request.
+        \end{itemize}
+  
+            
 
 
+\section{EDUCATION} 
+    \dateditem{Candidate for Bachelor of Software Engineering}{September 2017 - present}
+        Honours Software Engineering, \\
+        University of Waterloo, Waterloo, ON
+        \begin{itemize}
+            \item First term average of 95\%.
+        \end{itemize}
+
+    \dateditem{High School Diploma}{June 2017}
+        Thornhill Secondary School, Thornhill, ON
+        \begin{itemize}
+            \item Grade 12 average mark of 96.5\%.
+            \item Highest mark in class in 3 of 7 grade 12 classes.
+        \end{itemize}
 
 
 \end{resume}

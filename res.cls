@@ -230,8 +230,7 @@
     }%
   }%
 
-  \weirdcentre{\@email}
-  \weirdcentre{\@phone}
+  \weirdcentre{\@email \hspace{1in} \@phone \hspace{1in} \@site}
 \endgroup}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -241,7 +240,7 @@
 \newcommand{\centre}[1]{ \moveleft.5\hoffset\centerline{#1}}
 \newcommand{\horizontalline}{\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip}
 
-\newcommand{\dateditem}[2]{{\sl \textbf{#1}} \hfill #2 \\}
+\newcommand{\dateditem}[2]{{\sl \textbf{#1}} \hfill #2 \break}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % this is used to print the name and address at the top of
@@ -259,7 +258,8 @@
     % do nothing
   }{%
     \leavevmode\hbox to \textwidth
-      {\hfill\vbox{\hbox{\@addressone}
+      %{\hfill\vbox{\hbox{\@addressone}
+       {\hfill\vbox{\hbox{\@email \hspace{.05in} --- \hspace{.05in} \@phone \hspace{.05in} --- \hspace{0.05in} \@site}
 		   \hbox{\@addresstwo}
 		  }%
       }\par
@@ -515,6 +515,13 @@
 \def\phone#1{\def\@phone{#1}}
 
 \def\@phone{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% use this to define your repo or site
+%
+\def\site#1{\def\@site{#1}}
+
+\def\@site{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
